@@ -19,9 +19,9 @@ class _LandingPageState extends State<LandingPage> {
           ),
           Center(
               child: Image.asset(
-                'assets/fooder.png',
-                height: 30,
-              )),
+            'assets/fooder.png',
+            height: 30,
+          )),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 16),
             child: Text(
@@ -36,7 +36,7 @@ class _LandingPageState extends State<LandingPage> {
               minWidth: 100,
               height: 50,
               child: RaisedButton(
-                onPressed: () => {},
+                onPressed: () => Navigator.pushNamed(context, 'login'),
                 child: Center(
                   child: Text(
                     "Sign In",
@@ -52,7 +52,10 @@ class _LandingPageState extends State<LandingPage> {
           ),
           Text(
             "or",
-            style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, ),
+            style: TextStyle(
+              color: Colors.grey,
+              fontWeight: FontWeight.bold,
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -60,37 +63,46 @@ class _LandingPageState extends State<LandingPage> {
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
                 child: RaisedButton(
-                  child: Padding(padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-                      child: Image.asset("assets/facebook_logo.png", height: 25,)),
+                  child: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                      child: Image.asset(
+                        "assets/facebook_logo.png",
+                        height: 25,
+                      )),
                   color: Color(0xff5c6bc0),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(7)
-                  ),
+                      borderRadius: BorderRadius.circular(7)),
                   onPressed: () => {},
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
                 child: RaisedButton(
-                  child: Padding( padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-                      child: Image.asset("assets/google_logo.png", height: 25,)),
+                  child: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
+                      child: Image.asset(
+                        "assets/google_logo.png",
+                        height: 25,
+                      )),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(7)
-                  ),
+                      borderRadius: BorderRadius.circular(7)),
                   onPressed: () => {},
                 ),
               ),
             ],
           ),
-
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text("Don't have any account? "),
-
-                Text("Create Here", style: TextStyle(color: Colors.blue),)
+                InkWell(
+                    onTap: () => Navigator.pushNamed(context, 'signup'),
+                    child: Text(
+                      "Create Here",
+                      style: TextStyle(color: Colors.blue),
+                    ))
               ],
             ),
           )
