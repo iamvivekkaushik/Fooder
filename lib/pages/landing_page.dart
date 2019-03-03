@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
+class LandingPage extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _LandingPageState createState() => _LandingPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -19,9 +19,9 @@ class _LoginPageState extends State<LoginPage> {
           ),
           Center(
               child: Image.asset(
-            'assets/fooder.png',
-            height: 30,
-          )),
+                'assets/fooder.png',
+                height: 30,
+              )),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 16),
             child: Text(
@@ -64,7 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: Image.asset("assets/facebook_logo.png", height: 25,)),
                   color: Color(0xff5c6bc0),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(7)
+                      borderRadius: BorderRadius.circular(7)
                   ),
                   onPressed: () => {},
                 ),

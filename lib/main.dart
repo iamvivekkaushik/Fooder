@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fooder/pages/login.dart';
+import 'package:fooder/pages/landing_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Fooder',
-      home: LoginPage(),
+      home: LandingPage(),
     );
   }
 }

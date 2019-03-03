@@ -1,4 +1,4 @@
-# fooder
+<img src="/assets/fooder.png" alt="Fooder Logo" width="400" />
 
 A new Flutter application.
 
