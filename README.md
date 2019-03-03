@@ -1,16 +1,14 @@
 <img src="/assets/fooder.png" alt="Fooder Logo" width="400" />
 
-A new Flutter application.
+[comment]: # ([![GitHub tag](https://img.shields.io/github/tag/mcnamee/react-native-starter-kit.svg?style=flat-square)](https://github.com/mcnamee/react-native-starter-kit/tags))
+[comment]: # ([![GitHub pull requests](https://img.shields.io/github/issues-pr/iamvivekkaushik/fooder.svg)](https://github.com/iamvivekkaushik/Fooder/issues-pr))
 
-## Getting Started
+[![GitHub contributors](https://img.shields.io/github/contributors/iamvivekkaushik/Fooder.svg)](https://github.com/iamvivekkaushik/Fooder/contributors)
+[![GitHub license](https://img.shields.io/github/license/iamvivekkaushik/Fooder.svg)](https://raw.githubusercontent.com/iamvivekkaushik/Fooder/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/iamvivekkaushik/Fooder.svg)](https://github.com/iamvivekkaushik/Fooder/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/iamvivekkaushik/fooder.svg)](https://github.com/iamvivekkaushik/Fooder/issues-closed)
+[![GitHub repo size](https://img.shields.io/github/repo-size/iamvivekkaushik/fooder.svg)]
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+A new Flutter application for food ordering company.
