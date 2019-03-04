@@ -32,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 20, left: 30),
+            padding: EdgeInsets.only(top: 10, left: 32),
             child: Align(
                 alignment: Alignment.topLeft,
                 child: Text(
@@ -41,50 +41,69 @@ class _LoginPageState extends State<LoginPage> {
                 )),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 150, horizontal: 50),
+            padding: EdgeInsets.only(
+                top: 50.0, bottom: 15.0, left: 30.0, right: 30.0),
             child: Column(
               children: <Widget>[
-                TextFormField(
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
-                    labelText: "Email",
+                Theme(
+                  data: ThemeData(
+                    primaryColor: Colors.black
                   ),
-                  onFieldSubmitted: (String value) {
-                    FocusScope.of(context).requestFocus(node);
-                  },
-                  textInputAction: TextInputAction.next,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 40),
                   child: TextFormField(
-                    focusNode: node,
-                    keyboardType: TextInputType.text,
-                    obscureText: true,
+                    keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      labelText: "Password",
+                        labelText: "Email",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15.0))),
+                    onFieldSubmitted: (String value) {
+                      FocusScope.of(context).requestFocus(node);
+                    },
+                    textInputAction: TextInputAction.next,
+                  ),
+                ),
+                Theme(
+                  data: ThemeData(
+                    primaryColor: Colors.black
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: TextFormField(
+                      focusNode: node,
+                      keyboardType: TextInputType.text,
+                      obscureText: true,
+                      decoration: InputDecoration(
+                          labelText: "Password",
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(15.0))),
                     ),
                   ),
                 )
               ],
             ),
           ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 70),
-            child: ButtonTheme(
-              minWidth: 100,
-              height: 50,
-              child: RaisedButton(
-                onPressed: () => Navigator.pushNamed(context, 'home'),
-                child: Center(
-                  child: Text(
-                    "Log In",
-                    style: TextStyle(color: Colors.white),
+          Flexible(
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 60, horizontal: 70),
+              child: SizedBox(
+                height: 50,
+                width: 150,
+                child: ButtonTheme(
+                  minWidth: 100,
+                  height: 50,
+                  child: RaisedButton(
+                    onPressed: () => Navigator.pushNamed(context, 'home'),
+                    child: Center(
+                      child: Text(
+                        "Log In",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    highlightElevation: 4,
+                    color: Color(0xffec407a),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15)),
                   ),
                 ),
-                highlightElevation: 4,
-                color: Color(0xffec407a),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)),
               ),
             ),
           ),
